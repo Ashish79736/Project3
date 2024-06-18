@@ -1,0 +1,859 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat&display=swap');
+
+.grand-hotel{
+    font-family: Grand Hotel;
+}
+.montserrat{
+    font-family: Montserrat;
+}
+
+/* colors */
+*{
+    --text-color : #ffffff;
+    --info-text-color : #a7a9ad;
+    --primary-color : #29a19c;
+    --bg-color : #222831;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+.main_container{
+    /* width:100%; */
+    height: fit-content;
+    background-color: var(--bg-color);
+    /* padding-bottom: 10rem; */
+}
+
+/* NAVBAR */
+
+.navbar{
+    /* background-color: red; */
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+.item{
+    /* display: inline-block; */
+    list-style: none;
+    margin-right: 3.5rem;
+    font-size: 1.2rem;
+}
+.item a:hover{
+    color: white;
+    text-shadow: 0 0 5px var(--primary-color), 0 0 15px var(--primary-color), 0 0 20px var(--primary-color), 0 0 40px var(--primary-color), 0 0 10px var(--primary-color);
+}
+.item a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .2s;
+}
+/* .item:active::before{
+    content: "";
+    height: 0.5rem;
+    width:1rem;
+    background-color: var(--primary-color);
+} */
+.logo{
+    margin-right: 2rem;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+/* MAIN SECTION */
+
+/* intro */
+.intro{
+    /* display: flex; */
+    justify-content: space-between;
+    min-height: 38rem;
+    height: auto;
+    /* background: rgb(45, 45, 14); */
+    position: relative;
+    /* box-sizing: border-box;
+    padding: 0; */
+}
+.text{
+    color:var(--text-color);
+    margin-left: 3rem;
+}
+
+
+
+.text h1{
+    font-weight: 200;
+    line-height: 2rem;
+    height: fit-content;
+    
+}
+.text h3{
+    font-weight: 700;
+    line-height: 1rem;
+    margin-top: 7.2rem;
+}
+.text p{
+    color: var(--info-text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.button{
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.intro-design{
+    /* position: absolute; */
+    /* left: -7rem; */
+    /* display: block; */
+    z-index: 2;
+    overflow: hidden;
+}
+.curl1{
+    width: 108%;
+}
+/* .curl2{
+    width: 120%;
+} */
+.shd{
+    filter:drop-shadow(0px 0px 10px black);
+}
+
+
+/* black coffee */
+.black-coffee{
+    /* display: flex; */
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    position: relative;
+    /* padding: 0 4rem; */
+}
+
+.black-head{
+    /* width: 50%; */
+    transform: translate(0rem,-6rem);
+    text-align: center;
+}
+.black-head h3{
+    margin-top: 100px;
+    color: var(--text-color);
+    font-size: 9rem;
+    font-weight: 200;
+    line-height: 8rem;
+    margin-bottom: 4rem;
+}
+.black-head button{
+    background-color: var(--bg-color);
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.black-content img{
+    height: 25rem;
+    filter: drop-shadow(0px 0px 10px rgba(184, 184, 184, 0.822));
+}
+
+.black-content p{
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* hot coffee */
+.hot-coffee{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+/* .hot-coffee-design{
+    height: 10rem;
+} */
+
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hot-head{
+    transform: translate(0rem,-6rem);
+    text-align: center;
+    margin-top: 15rem;
+}
+.hot-head h3{
+    color: var(--text-color);
+    font-size: 9rem;
+    font-weight: 200;
+    line-height: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+}
+.hot-head button{
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+}
+
+.hotC-content{
+    margin-top: 7rem;
+}
+
+.hotC-content img{
+    height: 25rem;
+
+}
+
+.hotC-content p{
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* white coffee */
+
+.white-coffee{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+} */
+
+.white-head{
+    width: 50%;
+    transform: translate(0rem,-6rem);
+    text-align: center;
+    margin-top: 3rem;
+}
+.white-head h3{
+    color: var(--text-color);
+    font-size: 9rem;
+    font-weight: 200;
+    line-height: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+.white-head button{
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+}
+
+.white-content{
+    margin-top: 4rem;
+}
+
+.white-content img{
+    height: 25rem;
+}
+
+.white-content p{
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* voucher */
+
+.voucher{
+    align-items: center;
+    position: relative;
+}
+.voucher h3{
+    font-size: 7rem;
+    font-weight: 200;
+    line-height: 0rem;
+    color: var(--text-color);
+}
+.voucher button{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.8rem 2rem;
+}
+/* customer reviews */
+.reviews{
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+}
+.reviews h3{
+    font-size: 5rem;
+    font-weight: 200;
+
+    color: var(--text-color);
+}
+
+.cards{
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 2rem;
+}
+
+.review-card{
+    align-items: center;
+    /* height: fit-content; */
+}
+.review-card img{
+    height: 23rem;
+    object-fit: contain;
+
+    filter:drop-shadow( 0px 0px 10px black);
+
+}
+.review-card h6{
+    margin-left: 50px;
+    font-size: 4rem;
+    color: var(--text-color);
+    font-weight: 200;
+    /* line-height: 1rem; */
+    margin-top: 130px;
+    transform: translateY(-8rem);
+}
+.review-card p{
+    margin-top: 120px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transform: translateY(-16rem);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.reviews-design{
+    position: absolute;
+    width: 100%;
+    bottom: 0rem;
+    object-fit: cover;
+    /* left: -7rem; */
+    display: block;
+}
+
+/* timings */
+
+.timings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.timings h3{
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 0rem;
+    transform: translateY(-3rem);
+}
+.weekday{
+    transform: translateY(-3rem);
+}
+.weekday .day{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.weekday .time{
+    font-size: 1.3rem;
+}
+.weekend{
+    transform: translateY(-3rem);
+}
+.weekend .day{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.weekend .time{
+    font-size: 1.3rem;
+}
+
+/* branches */
+.branches{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.branches h3{
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 0rem;
+    color: var(--text-color);
+    /* transform: translateY(-3rem); */
+}
+.location-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+.branch-card{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.branch-card img{
+    box-shadow: rgba(0, 0, 0, 0.764) 0px 5px 15px;
+}
+.branch-name{
+    font-size: 2rem;
+    font-weight:900;
+    line-height: 3rem;
+    background-color: var(--primary-color);
+    /* padding: 0.3rem 0.1rem; */
+    border-radius: 1rem;
+    width: 12rem;
+    margin-bottom: 1rem;
+    /* width: 50%; */
+    position: relative;
+}
+.branch-name::before{
+    content: "";
+    height: 2rem;
+    width: 0.7rem;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0.1rem;
+    border-radius: 50%;
+    transform: rotate(347deg);
+}
+.branch-info{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.branch-design-up,.branch-design-down{
+    width: 100%;
+}
+
+/* footer */
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot img{
+    height: fit-content;
+}
+.footer{
+    width: 103%;
+    margin-left: -2%;
+    color:var(--text-color);
+    padding: 0rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.info{
+    display: flex;
+    width: 50%;
+}
+.information{
+    width:40%;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-card p{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.info-card ul{
+    padding-left: 0rem;
+}
+.info-card ul li{
+    list-style:none;
+    margin-bottom: 0.5rem;
+    
+}
+.info-card ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.foot-nav .navbar .menu .item a{
+    transition: all 0.3s;
+}
+.foot-nav .navbar .menu .item a:hover{
+    color: var(--bg-color);
+}
+.foot-nav .navbar .menu{
+    display: flex;
+    flex-direction: row;
+}
+.foot-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.social i{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    transition: all .2s;
+}
+.social i:hover{
+    cursor: pointer;
+    color: var(--bg-color);
+}
+
+
+/* background icons */
+.bg-icons img{
+    position: absolute;
+    top:2rem;
+    left: 0rem;
+    height: 10%;
+}
+#intro-cup{
+    top:auto;
+    left: 64%;
+}
+#intro-jar{
+    top:24rem;
+    left: 43%;
+    height: 12%;
+}
+#intro-bean{
+    top:12rem;
+    left: 53%;
+    height: 8%;
+}
+
+/* ------------------------------------------ */
+
+#black-cup{
+    top: -2rem;
+    left: 65%;
+}
+#black-jar{
+    top: 20rem;
+    left: 50%;
+}
+#black-bean1{
+    top: 20rem;
+    left: 67%;
+    height: 11%;
+}
+#black-bean2{
+    top: 1rem;
+    left: 53%;
+    height: 8%;
+}
+#black-bean3{
+    top: -6rem;
+    left: 12%;
+    height: 11%;
+    rotate: 294deg;
+}
+#black-bean4{
+    top: 29rem;
+    left: 10%;
+    height: 8%;
+    rotate: 294deg;
+}
+
+/* ------------------------------------- */
+
+#hot-cup{
+    top: 10rem;
+    left: 4rem;
+    height: 13%;
+    rotate: 320deg;
+}
+#hot-jar{
+    top: 33rem;
+    left: 50%;
+    height: 14%;
+    rotate: 60deg;
+}
+#hot-bean1{
+    top: 27rem;
+    left: 50%;
+    height: 9%;
+}
+#hot-bean2{
+    top: 14rem;
+    left: 49%;
+    height: 8%;
+}
+
+/* ------------------------------------- */
+
+#white-cup{
+    top: 10rem;
+    left: 56%;
+    height: 13%;
+    rotate: 347deg;
+}
+#white-bean1{
+    top: 0rem;
+    left: 23%;
+    height: 8%;
+    rotate: 301deg;
+}
+#white-bean2{
+    top: 16rem;
+    left: 47%;
+    height: 8%;
+    rotate: 300deg;
+}
+#white-jar{
+    top: 33rem;
+    left: 21%;
+    height: 17%;
+    rotate: 7deg;
+}
+
+/* --------------------------------------- */
+
+#voucher-cup{
+    top: 24rem;
+    left: 9%;
+    height: 13%;
+    rotate: 328deg;
+}
+#voucher-bean1{
+    top: 11rem;
+    left: 73%;
+    height: 9%;
+    rotate: 313deg;
+}
+
+#voucher-jar{
+    top: 38rem;
+    left: 65%;
+    height: 17%;
+    rotate: 56deg;
+}
+
+/* --------------------------------------- */
+
+#review-cup{
+    top: 30rem;
+    left: 62%;
+    height: 9%;
+    rotate: 352deg;
+}
+#review-bean1{
+    top: 13rem;
+    left: 46%;
+    height: 6%;
+    rotate: 313deg;
+}
+
+#review-jar{
+    top: 36rem;
+    left:4%;
+    height: 11%;
+    rotate: 20deg;
+}
+
+/* --------------------------------------- */
+
+#timing-cup{
+    top: 14rem;
+    left: 18%;
+    height: 25%;
+    rotate: 327deg;
+}
+#timing-bean1{
+    top: -2rem;
+    left: 17%;
+    height: 13%;
+    rotate: 313deg;
+}
+#timing-bean2{
+    top: 18rem;
+    left: 66%;
+    height: 18%;
+    rotate: 354deg;
+}
+#timing-jar{
+    top: 0rem;
+    left: 66%;
+    height: 25%;
+    rotate: 66deg;
+}
+
+/* --------------------------------------- */
+
+#branch-cup{
+    top: 49rem;
+    left: 62%;
+    height: 7%;
+    rotate: 351deg;
+}
+#branch-bean1{
+    top: 10rem;
+    left: 22%;
+    height: 6%;
+    rotate: 355deg;
+}
+#branch-bean2{
+    top: 18rem;
+    left: 89%;
+    height: 5%;
+    rotate: 310deg;
+}
+#branch-jar{
+    top: 49rem;
+    left: 29%;
+    height: 8%;
+    rotate: 66deg;
+}
+
+
+
+
+/* button effect */
+
+
+
+button {
+    --c: white;
+    color: var(--primary-color);
+    /* font-size: 16px; */
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    /* width: 12em; */
+    /* height: 3em; */
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    font-family: sans-serif;
+    /* letter-spacing: 0.1em; */
+    text-align: center;
+    /* line-height: 3em; */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    /* margin: 1em; */
+}
+
+button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+button:hover {
+    color: var(--primary-color);
+}
+button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+button span:nth-child(1) {
+    --n: 1;
+}
+
+button span:nth-child(2) {
+    --n: 2;
+}
+
+button span:nth-child(3) {
+    --n: 3;
+}
+
+button span:nth-child(4) {
+    --n: 4;
+}
+
+
+
+
+
+
+.black-c:hover {
+    color: var(--bg-color);
+}
+
+
